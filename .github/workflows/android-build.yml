@@ -32,6 +32,7 @@ jobs:
             cp android/app/src/main/AndroidManifest.xml /tmp/AndroidManifest.xml.bak
             flutter create . --project-name bambulab_timelapse --platforms=android
             cp /tmp/AndroidManifest.xml.bak android/app/src/main/AndroidManifest.xml
+            rm -f test/widget_test.dart
           fi
 
       - name: Install dependencies
