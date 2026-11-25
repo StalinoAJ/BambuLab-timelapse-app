@@ -16,10 +16,10 @@ A Flutter camera app that listens for `0` and `1` trigger values from an **ESP32
 
 ## Building for iOS & Android from Windows (GitHub Actions)
 
-1. Push this repository to GitHub (`main` or `master` branch).
-2. Open the **Actions** tab on GitHub and wait for the workflows to finish (or trigger them manually via **Run workflow**):
-   - **iOS**: **Build iOS (Unsigned IPA)** ([.github/workflows/ios-build.yml](.github/workflows/ios-build.yml)) → download `bambulab-timelapse-ios-unsigned` (`bambulab_timelapse_unsigned.ipa`) and sideload onto your iPhone using **Sideloadly** or **AltStore**.
-   - **Android**: **Build Android (Release APK)** ([.github/workflows/android-build.yml](.github/workflows/android-build.yml)) → download `bambulab-timelapse-android-apk` (`app-release.apk`) and install directly on your Android phone.
+1. Push this repository to GitHub (`main` or `master` branch) or trigger **Build & Release (Android APK + iOS IPA)** ([.github/workflows/build.yml](.github/workflows/build.yml)) manually from the **Actions** tab.
+2. Once finished, download the installers directly from the **Releases** page on GitHub (or from the workflow run's **Artifacts**):
+   - **iOS**: `bambulab_timelapse_unsigned.ipa` — sideload onto your iPhone using **Sideloadly** or **AltStore**.
+   - **Android**: `app-release.apk` — install directly on your Android phone.
 
 ## Getting Started (Local Mac / Android)
 
